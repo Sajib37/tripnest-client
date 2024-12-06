@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "../globals.css";
+import Sidebar from "@/components/Sidebar";
 
 export const metadata: Metadata = {
   title: "Tripnest",
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
+        <Sidebar/>
         {children}
       </body>
     </html>
